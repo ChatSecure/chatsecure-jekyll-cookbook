@@ -2,7 +2,7 @@
 
 server {
     listen      <%= @http_listen_port %>;
-    server_name <%= @domain %> www.<%= @domain %>;
+    server_name <%= @domain %> www.<%= @domain %> get.<%= @domain %>;
     location / {
         rewrite     ^   https://$server_name$request_uri? permanent;
     }
